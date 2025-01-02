@@ -43,6 +43,7 @@ namespace MyMongoProje.Services
             return _mapper.Map<List<ResultProductDto>>(values);
         }
 
+
         public async Task UpdateProductAsync(UpdateProductDto updateProductDto)
         {
            var values=_mapper.Map<Product>(updateProductDto);
