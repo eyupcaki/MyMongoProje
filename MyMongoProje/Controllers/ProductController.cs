@@ -55,5 +55,11 @@ namespace MyMongoProje.Controllers
             return RedirectToAction("ProductList");
         }
 
+        public async  Task<IActionResult> ResultProductWithCategory()
+        {
+            var values = await _productService.GetResultProductWithCategoryAsync();
+            return  View(values);
+        }
+
 	}
 }

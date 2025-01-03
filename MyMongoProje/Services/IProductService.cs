@@ -10,5 +10,7 @@ namespace MyMongoProje.Services
 
         Task DeleteProductAsync(string id);
         Task<GetByIdProductDto> GetByIdProductAsync(string id);
+
+        Task<List<ResultProductWithCategoryDto>> GetResultProductWithCategoryAsync();
     }
 }

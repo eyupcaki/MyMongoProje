@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MyMongoProje.Dtos;
+using MyMongoProje.Dtos.CategoryDtos;
 using MyMongoProje.Dtos.ProductDtos;
 using MyMongoProje.Entities;
 
@@ -19,6 +20,10 @@ namespace MyMongoProje.Mapping
             CreateMap<Product, CreateProductDto>().ReverseMap();
             CreateMap<Product, UpdateProductDto>().ReverseMap();
             CreateMap<Product, GetByIdProductDto>().ReverseMap();
+            CreateMap<Product, ResultProductWithCategoryDto>().ReverseMap();
+           
+            
+            CreateMap<Category, CreateCategoryDto>().ReverseMap();
         }
     }
 }
